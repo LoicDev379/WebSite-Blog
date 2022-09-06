@@ -12,7 +12,7 @@
     <!-- </p> -->
   </button>
 <?php endforeach; ?>
-<?php debug($v); ?>
+<!-- <php debug($v); ?> -->
 
 <nav>
   <ul class="pagination">

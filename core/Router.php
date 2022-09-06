@@ -15,7 +15,7 @@ class Router
 
     foreach (Router::$routes as $v) {
       if (preg_match($v["catcher"], $url, $match)) {
-        debug($match);
+        // debug($match);
         $request->controller = $v["controller"];
         $request->action = $v["action"];
         $request->params = [];
@@ -44,7 +44,7 @@ class Router
     $r["origin"] = preg_replace('/([a-z0-9]+):([^\/]+)/', '$1:(?P<$1>$2)', $url);
     $r["origin"] = "/" . str_replace("/", "\/", $r["origin"]) . "/";
 
-    debug($url);
+    // debug($url);
     $params = explode("/", $url);
 
     foreach ($params as $k => $v) {
@@ -69,7 +69,7 @@ class Router
     $r["catcher"] = "/" . str_replace("/", "\/", $r["catcher"]) . "/";
 
     self::$routes[] = $r;
-    debug($r);
+    // debug($r);
   }
 
   public static function url($url)
