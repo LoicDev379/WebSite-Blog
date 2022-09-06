@@ -1,0 +1,5 @@
+RewriteEngine On
+
+#Permet de tout rediriger vers webroot
+
+RewriteRule (.*) webroot/$1 [L]

@@ -1,0 +1,21 @@
+body {
+  background: rgba(0, 0, 0, 0.3);
+  /* opacity: 0.1; */
+}
+
+li a:hover, p a:hover {
+  /* color: black; */
+  text-decoration: none;
+}
+
+button a,
+button a:hover {
+  color: white;
+  text-decoration: none;
+
+}
+
+.btn-lire-la-suite {
+  margin-top: 0;
+  margin-bottom: 3%;
+}
